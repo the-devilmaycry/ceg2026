@@ -22,3 +22,8 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
+tempCodeRunnerFile.java
+*.class
+*.o
+*.exe
