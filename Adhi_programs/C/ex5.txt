@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+#include <limits.h>
+
+int main() {
+    int a[10],n;
+    int max=INT_MIN;
+ scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+
+    int sum=0;
+    int temp;
+    for (int i=0;i<n;i++){
+          sum+=a[i];
+
+        if (sum > max){
+            max=sum;
+        }
+
+        if (sum < 0){
+            sum=0;
+        }
+    }
+    
+        printf("Sum is %d",max);
+
+}
+

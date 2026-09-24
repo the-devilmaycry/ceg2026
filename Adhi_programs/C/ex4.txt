@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main() {
+    int a[10],n;
+    printf("Enter total no of elements ");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    int largest=a[0];
+    int second=a[0];
+    for (int j=0;j<n;j++){
+        if (a[j]>largest){
+            second=largest;
+            largest=a[j];
+        }
+        else if (a[j]>second && a[j]!=largest){
+            second=a[j];
+        }
+    }
+        printf("Second Largest Element is %d",second);
+
+}
+
