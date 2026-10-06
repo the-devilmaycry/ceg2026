@@ -1,4 +1,4 @@
-class animal1 {
+class animal {
     int nolegs=4;
 
     public static void eat(){
@@ -11,9 +11,9 @@ class animal1 {
 
 class dog1 extends animal{
     Boolean canbark=true;
-    int nolegs=5;
+    public static int nolegs=5;
     public static void eat(){
-        System.out.println("Dog  am Eating");
+        System.out.println("Dog  is Eating");
     }
 
 
@@ -22,10 +22,10 @@ class dog1 extends animal{
 
 public class third {
     public static void main(String[] args){
-        dog1 obj=new dog1();
-        System.out.println(obj.nolegs);
-        obj.eat();
-        obj.walk();
+        dog1.eat(); 
+        System.out.println(dog1.nolegs);
+        dog1.eat();
+        dog1.walk();
 
     }
 }

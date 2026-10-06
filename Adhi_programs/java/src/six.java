@@ -6,7 +6,7 @@ abstract class Computer{
 }
 
 class HP extends Computer{
-    void turnon(){
+   void turnon(){
         System.out.println("Turn on 1");
     }
     void turnoff(){
